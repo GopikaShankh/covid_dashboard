@@ -1,0 +1,12 @@
+.page-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.page-container h2 {
+  color: #c0392b;
+}
+
+.page-container p {
+  color: #7f8c8d;
+}

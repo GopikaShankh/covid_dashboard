@@ -1,0 +1,136 @@
+/* Profile.css */
+
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007acc;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation for Right to Left Slide */
+.profile-section {
+  margin-bottom: 20px;
+  animation: slideInRight 0.8s ease-out;
+  opacity: 0;
+  transform: translateX(100px);
+  animation-fill-mode: forwards;
+}
+
+/* Delay for staggered effect */
+.profile-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.profile-section:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.profile-section:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.profile-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007acc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.profile-section p {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+.profile-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.profile-section ul li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border-left: 4px solid #007acc;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-section ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.profile-section ul li:hover {
+  background-color: #e8f4ff;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .profile-title {
+    font-size: 1.5em;
+  }
+
+  .profile-section h3 {
+    font-size: 1.3em;
+  }
+
+  .profile-section p {
+    font-size: 1em;
+  }
+}
