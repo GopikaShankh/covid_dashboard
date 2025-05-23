@@ -2,9 +2,9 @@
 
 /* Container styling */
 .all-data-container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem 1.5rem;
+  max-width: 90%;
+  margin: 0.8rem auto;
+  padding: 0.8rem 1.5rem;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
